@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+background-color: lightblue;
+}
+.container{
+
+
+    max-width: 900px;
+    margin:  0 auto;
+}
+.apply-box{
+max-width: 600px;
+padding: 20px;
+background-color: antiquewhite;
+border-radius: 20px;
+margin: 0 auto;
+margin-top: 50px;
+box-shadow: 2 3 5 rgba( 0, 0,0 0.1)
+
+}
+
+.form_container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+
+}
+.form_controller{
+
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+}
+input, select, textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+border-radius: 4px;
+}
+input:focus{
+    outline-color: red;
+}
+address:focus{
+    outline-color: red;
+}
+.button-containter{
+    display: flex;
+justify-content: flex-end;
+margin-top: 20px;
+}
+button {
+
+    background-color: red;
+    border: transparent solid 10px;
+    border-radius:  15px    ;
+    padding:  5px 10px;
+    color: white;
+}
+button:hover {
+
+    background-color: rgb(255, 255, 255);
+    border: transparent solid 10px;
+    border-radius:  15px    ;
+    padding:  5px 10px;
+    color: rgb(255, 0, 0);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.textarea_control{
+
+    grid-column: 1/span 2;
+}
+
+.textarea_control{
+
+width: 100%;}
+
+@media (max-width 460px){
+.textarea_control{
+    grid-column: 1/span;
+}
+
+
+}
+
+.form_controller {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add this class for the address input */
+.address_control {
+    grid-column: 1 / -1; /* Spans full width */
+}
+
+/* Rest of your CSS */
